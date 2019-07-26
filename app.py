@@ -16,7 +16,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 jwt = JWTManager(app)
 
 CORS(app)
-client = MongoClient('mongodb+srv://omar:bwALFlv9rrmedWG3@news-tafvd.mongodb.net/test?retryWrites=true')
+client = MongoClient('localhost', 27017)
 db = client.music_app
 users = db.users
 music = db.music
